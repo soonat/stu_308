@@ -1,0 +1,19 @@
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.selected {
+  border: 4px solid yellow;
+  transform: scale(1.2);
+  background-color: tomato;
+}
