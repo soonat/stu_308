@@ -1,0 +1,91 @@
+.flash-card {
+    width: 320px;
+    height: 250px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.flash-card.flipped {
+    background-color: #f8fbff;
+    border: 2px solid #e0e0e0;
+    transform: translateY(-5px);
+}
+
+.card-content {
+    width: 100%;
+    text-align: center;
+}
+
+/* O, X 버튼 스타일 */
+.ox-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.ox-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: 0.2s;
+}
+
+.o-btn { background-color: #4caf50; }
+.o-btn:hover { background-color: #45a049; transform: scale(1.1); }
+
+.x-btn { background-color: #f44336; }
+.x-btn:hover { background-color: #da190b; transform: scale(1.1); }
+
+/* 뒷면 결과 화면 스타일 */
+.back-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.success-text { color: #2196f3; margin: 0; font-size: 1.3rem; }
+.fail-text { color: #f44336; margin: 0; font-size: 1.3rem; }
+
+.explanation-text {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+/* 다시 풀기 / 정답 확인 버튼 */
+.action-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.action-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.action-btn:hover { background-color: #ccc; }
+.check-btn { background-color: #2196f3; color: white; }
+.check-btn:hover { background-color: #1976d2; }

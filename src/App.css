@@ -1,0 +1,31 @@
+.app-wrap {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap; /* 카드가 화면을 넘어가면 아랫줄로 내려가게 합니다 */
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.scoreboard {
+  background-color: #ffe066;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.scoreboard span {
+  color: #d32f2f;
+  font-size: 1.5rem;
+}
